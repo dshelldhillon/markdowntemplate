@@ -1,0 +1,48 @@
+---
+title: "Boiler plate analysis template"
+author: "Your Name"
+date: "The Date"
+output:
+  html_document:
+    theme: journal
+    toc: true
+    toc_float : false 
+---
+<style>
+.list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover {
+    background-color: #FFC300;
+}
+</style>
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+
+```{r}
+## Here are the libraries to install  
+library(tidyverse)  
+library(emmeans)  
+library(janitor)  
+library(broom)
+library(car)
+library(readxl)
+library(here)
+
+```
+
+
+
+<font size="4" color="red">  
+
+### Introduction    
+
+</font>
+
+
+<font size="4" color="red">
+
+### Exploratory Analysis 
+
+</font>
+
