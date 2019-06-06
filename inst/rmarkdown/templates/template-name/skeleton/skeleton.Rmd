@@ -1,10 +1,9 @@
 ---
 title: "Boiler plate analysis template"
-author: "Your Name"
-date: "The Date"
+author: "Dilsher Singh Dhillon"
+date: "`r format(Sys.time(),'%d %B,%Y')`"
 output:
   html_document:
-    theme: journal
     toc: true
     toc_float : false 
 ---
@@ -21,11 +20,11 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ```{r}
 ## Here are the libraries to install  
-library(tidyverse)  
+#library(tidyverse)  
 library(emmeans)  
 library(janitor)  
 library(broom)
-library(car)
+#library(car)
 library(readxl)
 library(here)
 
@@ -37,7 +36,19 @@ library(here)
 
 ### Introduction    
 
-</font>
+</font>  
+
+Here goes the introdcution of the project  
+
+```{r Data Import}
+
+```
+
+
+```{r Data Processing}
+
+```
+
 
 
 <font size="4" color="red">
@@ -46,7 +57,26 @@ library(here)
 
 </font>
 
+All graphs and exploratory analysis. 
 
+```{r Exploratory Analysis 1}
+
+```
+
+
+```{r Exploratory Analysis 2}
+
+```
+
+
+```{r Exploratory Analysis 3}
+
+```
+
+
+```{r Exploratory Analysis 4}
+
+```
 
 
 <font size="4" color="red">
@@ -55,9 +85,35 @@ library(here)
 
 </font>
 
+What model was fit - fixed effects, random effects
+
+```{r Modeling}
+
+```
+
+
+```{r Post Hoc Comparisons}
+
+```
+
+
+```{r Post-hoc Plots}
+
+```
+
+
 
 <font size="4" color="red">
 
 ### Results 
 
 </font>
+
+
+Here goes the interpretation of the analysis.  
+
+Results from the analysis - pairwise comparisons etc/ Discussions and summaries.   
+
+
+
+

@@ -1,4 +1,9 @@
 
+#' @importFrom graphics plot
+#' @importFrom stats lm
+#' @description This creates a linear model with all two way interactions for all factors
+#' @param df The data we are interested in
+#' @param outcome This is the outcome variable
 
 #' @export
 
@@ -8,9 +13,8 @@ two_way_lm <- function(df,outcome) {
   output <- list()
 
   model <- stats::lm(outcome ~ .*., data = df)
-  #output[[2]] <- plot(output[[1]])[[1]]
 
-  anova <- stats::anova(model, type = 3) %>% tbl_df
+  anova <- stats::anova(model, type = 3)
 
   output <- list(model = model,anova_tbl = anova)
   return(output)
