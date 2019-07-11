@@ -1,0 +1,93 @@
+---
+title: "Title of the Project"
+subtitle: "any subtitle you want"  
+author: "Dilsher Dhillon"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output:
+  html_document: 
+    df_print: kable
+    highlight: monochrome
+    theme: readable
+    toc: yes
+    toc_depth: 4
+    toc_float: yes
+---
+
+<style type="text/css">
+#TOC {
+  color: red; 
+}
+
+</style>
+
+<style>
+.list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover {
+    background-color: #FFC300;
+}
+</style>
+
+
+<style> 
+a:hover, a:focus{
+color: red;
+}
+</style>
+
+
+<style>  
+.nav-tabs > li.active >a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+color: red;
+}
+
+a{
+color: red;
+}
+</style>
+
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+
+
+```{r libraries}
+#library(tidyverse)
+library(emmeans)  
+library(janitor)  
+library(broom)
+library(readxl)
+library(here)
+library(fs)
+```
+
+<font size="4" color="red">  
+## Introduction   
+</font> 
+
+
+## Exploratory    
+
+
+
+
+### Sub heading under exploratory  {.tabset}
+Adding the tabset if needed 
+
+####  These with the 4 hashtags will have 4 tabs   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

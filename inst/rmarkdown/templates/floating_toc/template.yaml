@@ -1,0 +1,4 @@
+name: Floating TOC
+description: >
+   This is a template to load the most common libraries I always use when analyzing experimental data from colloabroators in shell
+create_dir: FALSE
