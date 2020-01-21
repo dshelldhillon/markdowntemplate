@@ -59,6 +59,17 @@ If you’re starting a new project, the function `directory_setup` creates
 an opinionated directory structure that every project typically consists
 of.
 
+``` bash
+Project Name/
+├── Data/
+|   └── raw
+|   └── processed
+├── Notebooks/
+├── Scripts/
+├── Misc/
+├── tmp/
+```
+
 ``` r
 #library(markdowntemplate)
 ## directory_setup()

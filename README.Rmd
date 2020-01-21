@@ -66,7 +66,18 @@ From the drop down menu, select File > New File > R markdown document > From Tem
 As of `r format(Sys.time(), '%d %B, %Y')`, there is one template RMD available that provides a skeleton for a Floating Table of Contents style document.  
 
 **New Project Workflow**  
-If you're starting a new project, the function `directory_setup` creates an opinionated directory structure that every project typically consists of.   
+If you're starting a new project, the function `directory_setup` creates an opinionated directory structure that every project typically consists of. 
+
+```bash
+Project Name/
+├── Data/
+|   └── raw
+|   └── processed
+├── Notebooks/
+├── Scripts/
+├── Misc/
+├── tmp/
+```
 
 ```{r example}
 #library(markdowntemplate)
