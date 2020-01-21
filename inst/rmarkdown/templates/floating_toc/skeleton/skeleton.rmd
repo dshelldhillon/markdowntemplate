@@ -6,8 +6,8 @@ date: "`r format(Sys.time(), '%d %B, %Y')`"
 output:
   html_document: 
     df_print: kable
-    highlight: monochrome
-    theme: readable
+    highlight: zenburn  
+    theme: default 
     toc: yes
     toc_depth: 4
     toc_float: yes
@@ -47,28 +47,29 @@ color: red;
 
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)  
+
+## change the echo to FALSE if you DON'T want the code chunks to appear in your output document  
 ```
 
 
 
 ```{r libraries}
-#library(tidyverse)
-library(emmeans)  
-library(janitor)  
-library(broom)
-library(readxl)
-library(here)
-library(fs)
+## import libraries  
 ```
 
-<font size="4" color="red">  
 ## Introduction   
-</font> 
+
+```{r}
+## code chunk goes here  
+```
 
 
 ## Exploratory    
 
+```{r}
+## code chunk goes here    
+```
 
 
 
