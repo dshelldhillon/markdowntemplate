@@ -19,12 +19,12 @@ some helpful resources to get started with Rmarkdown -
     reports  
 3.  [Why
     Rmarkdown](https://andrewbtran.github.io/NICAR/2018/workflow/docs/02-rmarkdown.html)
-    Another resource if you aren’t convicned already
+    Another resource if you aren’t convinced already
 
 In addition, this package provides vignettes that provide examples of
 the analysis frequently encountered by the statistical engineering
 group. The purpose of these documents is to help new joiners get on
-board quickly. The list of vignettes are
+board quickly. The list of planned vignettes are
 
 ``` 
 1. One-way and two way anova   
@@ -76,8 +76,8 @@ packages :
 From the drop down menu, select File \> New File \> R markdown document
 \> From Template \> …
 
-As of 21 January, 2020, there is one template RMD available that
-provides a skeleton for a Floating Table of Contents style document.
+As of 19 March, 2020, there is one template RMD available that provides
+a skeleton for a Floating Table of Contents style document.
 
 **New Project Workflow**  
 If you’re starting a new project, the function `directory_setup` creates

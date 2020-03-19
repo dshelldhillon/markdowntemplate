@@ -1,0 +1,119 @@
+---
+title: "Template"
+subtitle: ""
+author: "Author Name"
+institute: "Statistical Engineering (US)"
+date: "`r Sys.Date()`"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    css: xaringan-themer.css
+    nature:
+      titleSlideClass: [top, middle]
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+
+
+<style> 
+.title-slide {
+  color: #000000;
+  font-size: 1.4em;
+}
+
+.title-slide h1{
+  color: #000000;
+  font-size: 1.2m;
+}
+
+.title-slide h2{
+  color: #000000;
+  font-size: 0.8em;
+}
+
+.title-slide h3{
+  color: #000000;
+  font-size: 1em;
+}
+</style>
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE, 
+                      comment = NA) 
+```
+
+```{r message=FALSE, warning=FALSE, cache.comments=FALSE, comment=NA, results='asis'}
+library(xaringanthemer)
+invisible(mono_light(
+  base_color = "#FFFFFF",
+  header_color = "#000000",
+  text_bold_color	= "#FF0000",
+  text_color = "#000000",
+  background_image = "all_background.png",
+  background_size = "contain",
+  background_position = "10px",
+  title_slide_background_image = "title_background.png",
+  title_slide_background_size = "contain",
+  #title_slide_background_color	= "#FFC500",
+  title_slide_text_color = "#000000",
+  text_slide_number_color = "#000000",
+  text_font_size = "15px",
+  header_h1_font_size = "40x",
+  #header_font_google = google_font("Josefin Sans"),
+  #text_font_google   = google_font("Montserrat", "300", "300i"),
+  #code_font_google   = google_font("Droid Mono")
+outfile = "xaringan-themer.css"))
+```
+
+
+# Introduction  
+
+- Use `-` for bullet points 
+
+-    Use `*` for a sub bullet point 
+    * 0k, 2000k, 20000k, 35000k, 50000k (used and fresh), 65000k and 80000k(used and fresh) 
+--
+
+-   Use `--` between bullet points to enable transition  
+
+--
+
+- 
+
+
+
+```{r}
+## Add in any code here 
+```
+
+
+
+---
+
+# Section 1    
+
+
+
+- **Sub section ** : 
+
+--
+
+- **Sub section** :   
+
+--
+
+- **Sub Section** :  
+
+--
+
+
+---
+
+### Section 2   
+
+
+
+
+---

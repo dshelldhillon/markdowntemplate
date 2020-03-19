@@ -602,7 +602,6 @@ body {
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" title="1"><span class="kw">library</span>(rmarkdown)</a></code></pre></div>
 <h1 id="markdowntemplate">markdowntemplate</h1>
 <!-- badges: start -->
 
@@ -614,6 +613,16 @@ body {
 <li><a href="https://holtzy.github.io/Pimp-my-rmd/#use_dt_for_tables">Pimp my Rmarkdown</a> This resource provides resources on how to customize Rmarkdown reports</li>
 <li><a href="https://andrewbtran.github.io/NICAR/2018/workflow/docs/02-rmarkdown.html">Why Rmarkdown</a> Another resource if you aren’t convicned already</li>
 </ol>
+<p>In addition, this package provides vignettes that provide examples of the analysis frequently encountered by the statistical engineering group. The purpose of these documents is to help new joiners get on board quickly. The list of vignettes are</p>
+<pre><code>1. One-way and two way anova   
+    a. All pairwise comparisons    
+    b. All to control comparisons   
+    c. Custom contrasts (only some pairwise comparisons)     
+2. Split plot models     
+    a. How to analyze split plot models in R    
+    b. Satterwhite vs Kenward Roger Degree of Freedom     
+    c. Pairwise comparisons    
+</code></pre>
 <h2 id="installation">Installation</h2>
 <p>This package will probably never make it’s way to CRAN so it will need to be installed from github like so :</p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" title="1"><span class="co">#if (!require(&quot;devtools&quot;)) install.packages(&quot;devtools&quot;)</span></a>
@@ -621,23 +630,39 @@ body {
 <a class="sourceLine" id="cb2-3" title="3"><span class="co"># devtools::install_github(dshelldhillon/markdowntemplate) </span></a>
 <a class="sourceLine" id="cb2-4" title="4"><span class="co"># </span></a>
 <a class="sourceLine" id="cb2-5" title="5"><span class="co"># library(markdowntemplate) </span></a></code></pre></div>
+<p>You <em>may</em> have to restart your R session after installing the package to enable the Rmarkdown templates</p>
 <p>This package also imports and installs the following recommended packages :</p>
-<p>magrittr (&gt;= 1.5), emmeans (&gt;= 1.3.3), forcats (&gt;= 0.4.0), stringr (&gt;= 1.4.0), purrr (&gt;= 0.3.2), readr (&gt;= 1.3.1), tidyr (&gt;= 0.8.3), tibble (&gt;= 2.1.1), ggplot2 (&gt;= 3.1.0), rmarkdown (&gt;= 1.13), readxl (&gt;= 1.3.1), usethis (&gt;= 1.5.0), fs (&gt;= 1.3.1), here (&gt;= 0.1)</p>
+<pre><code>magrittr (&gt;= 1.5),
+emmeans (&gt;= 1.3.3),
+forcats (&gt;= 0.4.0),
+stringr (&gt;= 1.4.0),
+purrr (&gt;= 0.3.2),
+readr (&gt;= 1.3.1),
+tidyr (&gt;= 0.8.3),
+tibble (&gt;= 2.1.1),
+ggplot2 (&gt;= 3.1.0),
+rmarkdown (&gt;= 1.13),
+readxl (&gt;= 1.3.1),
+usethis (&gt;= 1.5.0),
+fs (&gt;= 1.3.1),
+here (&gt;= 0.1)
+</code></pre>
 <h2 id="example">Example</h2>
 <p>From the drop down menu, select File &gt; New File &gt; R markdown document &gt; From Template &gt; …</p>
 <p>As of 21 January, 2020, there is one template RMD available that provides a skeleton for a Floating Table of Contents style document.</p>
 <p><strong>New Project Workflow</strong><br />
 If you’re starting a new project, the function <code>directory_setup</code> creates an opinionated directory structure that every project typically consists of.</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb3-1" title="1"><span class="ex">Project</span> Name/</a>
-<a class="sourceLine" id="cb3-2" title="2">├── <span class="ex">Data/</span></a>
-<a class="sourceLine" id="cb3-3" title="3"><span class="kw">|</span>   └── <span class="ex">raw</span></a>
-<a class="sourceLine" id="cb3-4" title="4"><span class="kw">|</span>   └── <span class="ex">processed</span></a>
-<a class="sourceLine" id="cb3-5" title="5">├── <span class="ex">Notebooks/</span></a>
-<a class="sourceLine" id="cb3-6" title="6">├── <span class="ex">Scripts/</span></a>
-<a class="sourceLine" id="cb3-7" title="7">├── <span class="ex">Misc/</span></a>
-<a class="sourceLine" id="cb3-8" title="8">├── <span class="ex">tmp/</span></a></code></pre></div>
-<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb4-1" title="1"><span class="co">#library(markdowntemplate)</span></a>
-<a class="sourceLine" id="cb4-2" title="2"><span class="co">## directory_setup()</span></a></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb4-1" title="1"><span class="ex">Project</span> Name/</a>
+<a class="sourceLine" id="cb4-2" title="2">├── <span class="ex">Data/</span></a>
+<a class="sourceLine" id="cb4-3" title="3"><span class="kw">|</span>   └── <span class="ex">raw</span></a>
+<a class="sourceLine" id="cb4-4" title="4"><span class="kw">|</span>   └── <span class="ex">processed</span></a>
+<a class="sourceLine" id="cb4-5" title="5">├── <span class="ex">Notebooks/</span></a>
+<a class="sourceLine" id="cb4-6" title="6">├── <span class="ex">Scripts/</span></a>
+<a class="sourceLine" id="cb4-7" title="7">├── <span class="ex">Misc/</span></a>
+<a class="sourceLine" id="cb4-8" title="8">├── <span class="ex">tmp/</span></a></code></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb5-1" title="1"><span class="co">#library(markdowntemplate)</span></a>
+<a class="sourceLine" id="cb5-2" title="2"><span class="co">## directory_setup()</span></a></code></pre></div>
+<h2 id="vignettes">Vignettes</h2>
 
 </body>
 </html>

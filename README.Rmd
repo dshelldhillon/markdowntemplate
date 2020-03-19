@@ -22,9 +22,9 @@ The goal of markdowntemplate is to provide the least resistance path to adoption
 
 1.  [Rmarkdown Book](https://bookdown.org/yihui/rmarkdown/)  This book is an exhaustive ressource for all things Rmarkdown  
 2.  [Pimp my Rmarkdown](https://holtzy.github.io/Pimp-my-rmd/#use_dt_for_tables) This resource provides resources on how to customize Rmarkdown reports  
-3.  [Why Rmarkdown](https://andrewbtran.github.io/NICAR/2018/workflow/docs/02-rmarkdown.html) Another resource if you aren't convicned already   
+3.  [Why Rmarkdown](https://andrewbtran.github.io/NICAR/2018/workflow/docs/02-rmarkdown.html) Another resource if you aren't convinced already   
 
-In addition, this package provides vignettes that provide examples of the analysis frequently encountered by the statistical engineering group.  The purpose of these documents is to help new joiners get on board quickly.   The list of vignettes are  
+In addition, this package provides vignettes that provide examples of the analysis frequently encountered by the statistical engineering group.  The purpose of these documents is to help new joiners get on board quickly.   The list of planned vignettes are  
 
 	1. One-way and two way anova   
 		a. All pairwise comparisons    
